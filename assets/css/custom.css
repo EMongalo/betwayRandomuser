@@ -1,0 +1,99 @@
+.body-background {
+    background:  #F9F9F9;
+}
+.card-background {
+    background:  #F9F9F9;
+}
+.top-div--background {
+    background: #2C2E31;
+}
+.u-image--div {
+    margin-bottom: -70px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+}
+.u-image--properties {
+    margin-bottom: -70px;
+    margin-top: -1px;
+    padding: 4px;
+}
+.l-container--150spacing {
+    margin-top: -150px;
+}
+
+.values_list{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    float:left
+}
+.values_list li{
+    cursor:pointer;
+    display:block;
+    width:40px;
+    height:48px;
+    float:left;
+    margin:20px;
+    background-image:url(../img/card_icons.png);
+    background-size:378px;
+    background-position-y:-48px;
+    transition:all .25s ease-out
+}
+.values_list li:before{
+    content:attr(data-label);
+    opacity:0
+}
+.values_list li.active[data-label=name]{
+    background-position:0 -96px
+}
+.values_list li.active[data-label=email]{
+    background-position:-68px -96px
+}
+.values_list li.active[data-label=birthday]{
+    background-position:-135px -96px
+}
+.values_list li.active[data-label=location]{
+    background-position:-203px -96px
+}
+.values_list li.active[data-label=phone]{
+    background-position:-270px -96px
+}
+.values_list li.active[data-label=pass]{
+    background-position:-338px -96px
+}
+.values_list li[data-label=name]{
+    background-position:0 -48px
+}
+.values_list li[data-label=email]{
+    background-position:-68px -48px
+}
+.values_list li[data-label=birthday]{
+    background-position:-135px -48px
+}
+.values_list li[data-label=location]{
+    background-position:-203px -48px
+}
+.values_list li[data-label=phone]{
+    background-position:-270px -48px
+}
+.values_list li[data-label=pass]{
+    background-position:-338px -48px
+}
+@media screen and (max-width:400px){
+    .card_offset{
+        margin-top:-80px
+    }
+    .card #user_value{
+        font-size:28px
+    }
+    li[data-label=email]{
+        display:none
+    }
+    .card .values_list{
+        margin-top:25px
+    }
+    .card .values_list li{
+        margin:0 5px
+    }
+}
